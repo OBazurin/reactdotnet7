@@ -5,13 +5,16 @@ import './app/layout/styles.css';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css'
 import App from "./app/layout/App";
+import {store, StoreContext} from "./app/stores/store";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
+    <StoreContext.Provider value={store}>
+        <App />
+    </StoreContext.Provider>
   // <React.StrictMode>
-    <App />
   // </React.StrictMode>
 );
 
