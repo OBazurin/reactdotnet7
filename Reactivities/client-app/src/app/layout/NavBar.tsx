@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 export default function NavBar()
 {
     return (
-        <Menu inverted fixed="top">
+        <Menu inverted fixed='top'>
             <Container>
                 <Menu.Item as={NavLink} to='/' header>
                     <img src='/assets/logo.png' alt='logo' style={{ marginRight: '10px'}}/>
