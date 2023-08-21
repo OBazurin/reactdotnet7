@@ -6,7 +6,7 @@ export default function HomePage(){
        <Segment inverted textAlign='center' vertical className='masthead'>
            <Container text>
                <Label color='blue'>
-                   Version 0.11.1
+                   Version 0.12.1
                </Label>
                <Header as='h1' inverted>
                    <Image size='massive' src='/assets/logo.png' alt='logo' style={{marginBottom: 12}}/>
