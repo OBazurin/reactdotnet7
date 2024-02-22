@@ -1,9 +1,8 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from "./app/layout/App";
+import { test, expect } from '@playwright/experimental-ct-react';
+import MyTextArea from './app/common/form/MyTextArea';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('should work', async ({ mount }) => {
+  const component = await mount(<MyTextArea rows={3} placeholder='Gello' name='gellothere' />);
+  //await expect(component).toContainText('Learn React');
+  await expect(component).toHaveText("asdasdasd");
 });
