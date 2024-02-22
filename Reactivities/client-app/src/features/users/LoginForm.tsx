@@ -21,7 +21,7 @@ export default observer(function LoginForm() {
                     <ErrorMessage name='error' render={() => 
                         <Label style={{marginBottom: 10}} basic color='red' content= {errors.error}/>
                     }/>
-                    <Button positive content='Login' type='submit' fluid/>
+                    <Button id='loginSubmitBtn' positive content='Login' type='submit' fluid/>
                 </Form>
             )}
         </Formik>
